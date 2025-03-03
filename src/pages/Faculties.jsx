@@ -17,25 +17,25 @@ const facultiesData = {
   cse: [
     {
       name: "Dr.V.Sasikala ",
-      designation: "Assistant Professor (Sr.Gr) & HoD (i/c)",
+      designation: "Assistant Professor (Sl.Gr) & HoD (i/c)",
       email: "sasikala@autmdu.in",
       image: SasikalaCSE, // Replace with actual image imports
     },
     {
       name: "Dr.M.Vinoth Kumar",
-      designation: "Assistant Professor (Sr.Gr)",
+      designation: "Assistant Professor (Sl.Gr)",
       email: "vinothkumar@autmdu.in",
       image: VinothKumarImg,
     },
     {
       name: "Dr.K.Karthikeyan ",
-      designation: "Assistant Professor(Sr.Gr)",
+      designation: "Assistant Professor(Sl.Gr)",
       email: "karthikeyan@autmdu.in",
       image: KarthikeyanCSE,
     },
     {
       name: "Dr.P.Uma Maheswari",
-      designation: "Assistant Professor (Sr.Gr)",
+      designation: "Assistant Professor (Sl.Gr)",
       email: "umamaheswari.p@autmdu.ac.in",
       image: UmaCSE,
     },
