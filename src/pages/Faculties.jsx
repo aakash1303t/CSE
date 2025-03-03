@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap"; // Import GSAP
 import KarthikeyanCSE from "../assets/Karthikeyan-CSE.png";
+import SrinivasanCSE from "../assets/Srinivasan.png";
 import UmaCSE from "../assets/Uma-CSE.png";
 import MuthumariCSE from "../assets/Muthumari-CSE.png";
 import JananiCSE from "../assets/Janani-CSE.png";
@@ -22,22 +23,16 @@ const facultiesData = {
       image: SasikalaCSE, // Replace with actual image imports
     },
     {
+      name: "Dr.S.Srinivasan ",
+      designation: "Professor",
+      email: "srinivasan@autmdu.in",
+      image: SrinivasanCSE, // Replace with actual image imports
+    },
+    {
       name: "Dr.M.Vinoth Kumar",
       designation: "Assistant Professor (Sl.Gr)",
       email: "vinothkumar@autmdu.in",
       image: VinothKumarImg,
-    },
-    {
-      name: "Dr.K.Karthikeyan ",
-      designation: "Assistant Professor(Sl.Gr)",
-      email: "karthikeyan@autmdu.in",
-      image: KarthikeyanCSE,
-    },
-    {
-      name: "Dr.P.Uma Maheswari",
-      designation: "Assistant Professor (Sl.Gr)",
-      email: "umamaheswari.p@autmdu.ac.in",
-      image: UmaCSE,
     },
     {
       name: "Dr.A.Muthumari ",
@@ -50,6 +45,18 @@ const facultiesData = {
       designation: "Assistant Professor",
       email: "srievidhyajanani@autmdu.in",
       image: JananiCSE,
+    },
+    {
+      name: "Dr.P.Uma Maheswari",
+      designation: "Assistant Professor (Sl.Gr)",
+      email: "umamaheswari.p@autmdu.ac.in",
+      image: UmaCSE,
+    },
+    {
+      name: "Dr.K.Karthikeyan ",
+      designation: "Assistant Professor(Sl.Gr)",
+      email: "karthikeyan@autmdu.in",
+      image: KarthikeyanCSE,
     },
     {
       name: "Dr.S.C.Rajkumar ",
@@ -65,13 +72,13 @@ const facultiesData = {
     },
     {
       name: "Mr.N.Ramar",
-      designation: "Lab Technician ",
+      designation: "Lab Technician(S.G)",
       email: "",
       image: ramarImg,
     },
     {
       name: "Mr.S.Periyasamy",
-      designation: "Lab Attender ",
+      designation: "Lab Attender(S.G)",
       email: "",
       image: MariImg,
     },
@@ -120,13 +127,16 @@ const FacultyCard = ({ name, designation, email, image }) => {
 // Faculties Page Component
 const FacultiesPage = () => {
   const categories = {
-    "Head Of Department": facultiesData.cse.filter((faculty) =>
+    "Head Of The Department": facultiesData.cse.filter((faculty) =>
       faculty.designation.includes("HoD")
+    ),
+    "Professors": facultiesData.cse.filter((faculty) =>
+      faculty.designation.includes("Professor") && !faculty.designation.includes("Assistant Professor")
     ),
     "Assistant Professors": facultiesData.cse.filter(
       (faculty) =>
         faculty.designation.includes("Assistant Professor") &&
-        !faculty.designation.includes("HoD")
+        !faculty.designation.includes("HoD") 
     ),
     "Teaching Fellow": facultiesData.cse.filter((faculty) =>
       faculty.designation.includes("Teaching Fellow")
@@ -160,7 +170,7 @@ const FacultiesPage = () => {
             </h2>
             <div
               className={`${
-                category === "Head Of Department" && facultyList.length === 1
+                category === "Head Of The Department" || category === "Professors" && facultyList.length === 1
                   ? "flex justify-center"
                   : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
               }`}
