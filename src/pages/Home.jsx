@@ -71,7 +71,7 @@ const Home = () => {
                   Dr. V. Sasikala
                 </h3>
                 <p className="text-sm text-gray-600">
-                  HoD (i/c) & Assistant Professor (Sr.Gr)
+                  HoD (i/c) & Assistant Professor (Sl.Gr)
                 </p>
               </div>
             </div>
