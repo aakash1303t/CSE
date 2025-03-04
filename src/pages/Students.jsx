@@ -90,7 +90,7 @@ const StudentList = ({ selectedDepartment = 'Cse', selectedYear = 'All' }) => {
         ) : (
           students.map(student => (
             <div key={student.registrationNumber} style={styles.card}>
-              <h2 style={styles.h2}>{student.studentName}</h2>
+              <h2 style={styles.h2}>{student.studentName.toUpperCase()}</h2>
               <p>Registration Number: {student.registrationNumber}</p>
             </div>
           ))
