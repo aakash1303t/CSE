@@ -127,34 +127,34 @@ const Navbar = () => {
                 {isFacilitiesOpen && (
                   <div className="flex flex-col mt-2">
                     <Link
-                      to="/ccc-lab"
+                      to="/computerlab1"
                       className="block py-2 text-gray-800 hover:text-blue-600"
                       onClick={() => {
                         handleLinkClick(); // Close menu
                         handleFacilityClick(); // Close facilities dropdown
                       }}
                     >
-                      CCC Lab
+                      Computer Lab - 1
                     </Link>
                     <Link
-                      to="/python-lab"
+                      to="/computerlab2"
                       className="block py-2 text-gray-800 hover:text-blue-600"
                       onClick={() => {
                         handleLinkClick(); // Close menu
                         handleFacilityClick(); // Close facilities dropdown
                       }}
                     >
-                      Python Lab
+                      Computer Lab - 2
                     </Link>
                     <Link
-                      to="/dbms-lab"
+                      to="/computerlab3"
                       className="block py-2 text-gray-800 hover:text-blue-600"
                       onClick={() => {
                         handleLinkClick(); // Close menu
                         handleFacilityClick(); // Close facilities dropdown
                       }}
                     >
-                      DBMS Lab
+                      Computer Lab - 3
                     </Link>
                   </div>
                 )}
@@ -194,25 +194,25 @@ const Navbar = () => {
             {isFacilitiesOpen && (
               <div className="absolute bg-white shadow-lg mt-2 rounded-lg w-48">
                 <Link
-                  to="/ccc-lab"
+                  to="/computerlab1"
                   className="block px-4 py-2 text-gray-800 hover:text-blue-600"
                   onClick={handleFacilityClick} // Close the facilities dropdown
                 >
-                  CCC Lab
+                  Computer Lab - 1
                 </Link>
                 <Link
-                  to="/python-lab"
+                  to="/computerlab2"
                   className="block px-4 py-2 text-gray-800 hover:text-blue-600"
                   onClick={handleFacilityClick} // Close the facilities dropdown
                 >
-                  Python Lab
+                  Computer Lab - 2
                 </Link>
                 <Link
-                  to="/dbms-lab"
+                  to="/computerlab3"
                   className="block px-4 py-2 text-gray-800 hover:text-blue-600"
                   onClick={handleFacilityClick} // Close the facilities dropdown
                 >
-                  DBMS Lab
+                  Computer Lab - 3
                 </Link>
               </div>
             )}

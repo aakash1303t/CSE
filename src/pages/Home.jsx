@@ -40,11 +40,7 @@ const Home = () => {
         {/* Description Section */}
         <div className="description text-center max-w-xl md:max-w-4xl mx-auto mb-16">
           <p className="text-base md:text-lg lg:text-xl font-medium text-gray-700 leading-relaxed">
-            The Computer Science and Engineering department is dedicated to
-            imparting knowledge and skills in software development, data
-            science, and computer systems. Our programs are tailored to meet
-            the demands of the tech industry, with a focus on innovation and
-            research.
+            The Department of Computer Science and Engineering was established in 2018, initially admitting 60 students into its undergraduate program. The department's key strengths include outstanding student enrolment, a highly qualified and dedicated faculty, excellent supporting staff, well-placed and academically recognized alumni, and state-of-the-art facilities.
           </p>
         </div>
 
@@ -57,10 +53,10 @@ const Home = () => {
             </h2>
           </div>
 
-          {/* Content Section */}
-          <div className="flex flex-col md:flex-row md:items-center md:space-x-8 max-w-4xl mx-auto">
+          {/* Stacked Layout for HOD's Message */}
+          <div className="flex flex-col items-center max-w-4xl mx-auto">
             {/* Card: Image and Details */}
-            <div className="hod-card bg-white shadow-lg rounded-lg overflow-hidden p-8 flex flex-col items-center">
+            <div className="hod-card bg-white shadow-lg rounded-lg overflow-hidden p-8 flex flex-col items-center mb-6">
               <img
                 src={hodImage}
                 alt="HOD"
@@ -77,21 +73,30 @@ const Home = () => {
             </div>
 
             {/* Message Content */}
-            <div className="flex-1 text-center md:text-left">
+            <div className="text-center md:text-left">
               <p className="uppercase text-base md:text-xl lg:text-2xl font-medium text-gray-800 leading-relaxed">
                 Welcome to the Department of Computer Science and Engineering.
               </p>
               <p className="text-base md:text-lg lg:text-xl font-medium text-gray-700 leading-relaxed mt-4">
-                We are committed to fostering innovation and excellence in
-                education, research, and professional development. Our goal is
-                to empower students to become the leaders of tomorrow in the
-                ever-evolving field of technology.
+                As the Head of the Department, I am honoured to lead a vibrant and forward-thinking team committed to excellence in teaching, research, and innovation. Since our inception in 2018, we have worked tirelessly to create a strong academic environment that fosters the growth of our students, preparing them to be future leaders in the rapidly changing world of technology.
+              </p>
+              <p className="text-base md:text-lg lg:text-xl font-medium text-gray-700 leading-relaxed mt-4">
+                Our department is dedicated to delivering a top-notch education, blending solid theoretical knowledge with hands-on practical experience. We are fortunate to have a highly skilled and passionate faculty, a dedicated support team, and state-of-the-art facilities that ensure an enriching learning journey. Our academic programs are designed to equip students with the skills necessary to tackle tomorrow’s challenges, ranging from software development and artificial intelligence to cybersecurity and data science.
+              </p>
+              <p className="text-base md:text-lg lg:text-xl font-medium text-gray-700 leading-relaxed mt-4">
+                We take great pride in fostering a collaborative and research-driven culture, where both students and faculty engage in exploring cutting-edge advancements in computer science and engineering. We also maintain strong connections with industry partners, offering our students valuable opportunities for internships, projects, and career advancement.
+              </p>
+              <p className="text-base md:text-lg lg:text-xl font-medium text-gray-700 leading-relaxed mt-4">
+                I encourage all students to make the most of the resources at their disposal, participate in extracurricular activities, and strive for excellence in both their academic and personal growth. Together, we will continue to build on the strong foundation of our department and achieve even greater success in the future.
+              </p>
+              <p className="text-base md:text-lg lg:text-xl font-medium text-gray-700 leading-relaxed mt-4">
+              I eagerly look forward to seeing all of you contribute to the promising future of our department and the broader field of Computer Science and Engineering.
               </p>
             </div>
           </div>
+          </div>
         </div>
       </div>
-    </div>
   );
 };
 

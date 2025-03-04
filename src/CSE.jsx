@@ -20,9 +20,9 @@ function CSE() {
           <Route path="/faculties" element={<Faculties />} />
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/students" element={<Students />} />
-          <Route path="/ccc-lab" element={<CCCLabPage />} />
-          <Route path="/python-lab" element={<PythonLabPage />} />
-          <Route path="/dbms-lab" element={<DBMSLabPage />} />
+          <Route path="/computerlab1" element={<CCCLabPage />} />
+          <Route path="/computerlab2" element={<PythonLabPage />} />
+          <Route path="/computerlab3" element={<DBMSLabPage />} />
           </Routes>
       </div>
       <Footer />
