@@ -13,7 +13,7 @@ const CCCLabPage = () => {
         <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center uppercase">Location: Room No. S-45 (Second Floor)</h1>
         
         {/* Description Section */}
-        <p className="text-lg text-gray-700 mb-8 ">
+        <p className="text-lg text-justify text-gray-700 mb-8 ">
         Computer Programming Lab is a hands-on project and assignment-based learning space where students will gain strong practical and technical skills in various programming languages including C, Python and Java, UNIX/Linux: shell, tools, utilities and programming environments, user interfaces, and software engineering principles. The laboratory hosts around 30 computer systems with uninterrupted power supply and Wi-Fi facility. The interactive board hosted in this laboratory helps Faculty in handling interactive sessions and hands-on training in this lab will give the students an opportunity to learn and better understand of the basic concepts and constructs of computer programming as well as advanced methodology concepts like Deep learning, Big Data Technologies, Artificial Intelligence, Computational Intelligence, etc. The major objectives of the laboratory are to introduce students to the basic knowledge of programming fundamentals of different programming languages like C, Python, and Java etc. as well as advanced programming concepts required for cutting edge programming needs towards Machine Learning, Deep Learning, Big Data, Artificial Intelligence, etc. 
         </p>
         <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center uppercase">Gallery</h1>
